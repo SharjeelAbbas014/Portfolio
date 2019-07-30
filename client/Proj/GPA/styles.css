@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    background: linear-gradient(135deg, #00a1b6, #00b18a);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    color: #ededed;
+    margin-top: 3%
+}
+
+.form {
+    width: max-content;
+    background: linear-gradient(45deg, #ededed, #dedede);
+    padding: 30px;
+    margin: 5% auto;
+    box-shadow: #00000060 0 0 20px;
+    border-radius: 15px
+}
+
+.oneIn {
+    display: flex;
+    margin: 0 auto
+}
+
+input {
+    padding: 15px 50px 15px 20px;
+    border: none;
+    margin: 10px 5px;
+    border-radius: 40px
+}
+
+.oneIn h2 {
+    text-align: center;
+    width: 100%;
+    font-weight: 400;
+    font-size: 16px
+}
+
+.CTA {
+    text-decoration: none;
+    color: #f26969;
+    border: 2px solid #f26969;
+    display: block;
+    width: 130px;
+    text-transform: uppercase;
+    padding: 20px;
+    border-radius: 200px;
+    text-align: center;
+    transition: all .2s ease-in;
+    font-weight: 700;
+    margin: 10px auto 0 auto;
+    cursor: pointer
+}
+
+.CTA:hover {
+    transition: all .2s ease-in;
+    background: linear-gradient(90deg, #f26969, #ff5353);
+    color: #ededed
+}
+
+.CTA:active {
+    transform: scale(.95)
+}
+
+p {
+    text-align: center;
+    padding: 20px
+}
+
+@media screen and (max-width: 760px){
+    input {
+        padding: 15px 10px 15px 10px;
+        border: none;
+        margin: 10px 0px;
+        border-radius: 40px;
+        max-width: 100%;
+    }
+    .form {
+        width: max-content;
+        background: linear-gradient(45deg, #ededed, #dedede);
+        padding: 5px;
+        margin: 5% auto;
+        box-shadow: #00000060 0 0 20px;
+        border-radius: 15px
+    }
+}
+
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+ 
+input[type="number"] {
+    -moz-appearance: textfield;
+}
